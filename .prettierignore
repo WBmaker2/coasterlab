@@ -1,0 +1,7 @@
+dist
+node_modules
+playwright-report
+test-results
+public/icons
+docs
+IMPLEMENTATION_PLAN.md

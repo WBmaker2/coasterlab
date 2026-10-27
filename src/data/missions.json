@@ -1,0 +1,87 @@
+[
+  {
+    "id": "energy-fastest",
+    "titleKo": "가장 빠른 순간",
+    "concept": "energy",
+    "promptKo": "이중 언덕 트랙에서 카트가 가장 빠른 지점은 어디일까?",
+    "trackPreset": "hill",
+    "prediction": {
+      "options": [
+        "출발점 (높이 24 m)",
+        "첫 번째 골짜기 바닥 (높이 4 m)",
+        "두 번째 언덕 (높이 4.8 m)",
+        "도착점 (높이 4.8 m)"
+      ],
+      "answer": "첫 번째 골짜기 바닥 (높이 4 m)"
+    },
+    "explanationKo": "마찰이 없으면 ½mv² + mgy가 일정합니다. 높이가 가장 낮은 첫 번째 골짜기에서 위치에너지가 가장 작고, 그만큼 운동에너지와 속도가 가장 큽니다. 에너지 그래프에서 운동에너지가 봉우리를 이루는 지점과 같습니다.",
+    "takeawayKo": "마찰이 없을 때는 높이가 가장 낮은 곳에서 속도가 가장 큽니다.",
+    "difficulty": 1
+  },
+  {
+    "id": "friction-thermal",
+    "titleKo": "마찰의 흔적",
+    "concept": "friction",
+    "promptKo": "마찰이 있는 긴 내리막에서 역학적 에너지는 어떻게 변할까?",
+    "trackPreset": "friction",
+    "prediction": {
+      "options": [
+        "열에너지로 바뀌어 역학적 에너지가 줄어든다",
+        "위치에너지가 완전히 사라진다",
+        "운동에너지가 항상 일정하게 유지된다",
+        "중력이 점점 약해진다"
+      ],
+      "answer": "열에너지로 바뀌어 역학적 에너지가 줄어든다"
+    },
+    "explanationKo": "마찰력은 운동을 방해하며 역학적 에너지를 열에너지로 전환합니다. 그래프에서 운동에너지와 위치에너지의 합은 줄어들고, 열에너지는 계속 증가합니다. 세 값을 모두 더하면 에너지 보존 법칙이 성립합니다.",
+    "takeawayKo": "마찰은 역학적 에너지를 줄이지만, 열에너지까지 포함하면 전체 에너지는 보존됩니다.",
+    "difficulty": 1
+  },
+  {
+    "id": "loop-top-g",
+    "titleKo": "루프 꼭대기의 G",
+    "concept": "circular",
+    "promptKo": "수직 루프에서 G-force가 가장 작은 지점은 어디일까?",
+    "trackPreset": "loop",
+    "prediction": {
+      "options": ["루프 꼭대기", "루프 바닥", "루프에 진입하기 직전", "루프를 빠져나온 뒤"],
+      "answer": "루프 꼭대기"
+    },
+    "explanationKo": "꼭대기에서는 중력과 수직항력이 모두 아래쪽(원의 중심 방향)을 향합니다. N/mg = v²/(gR) − 1이므로 속도가 가장 느린 꼭대기에서 G-force가 가장 작습니다. 바닥에서는 같은 방향의 힘이 더해져 G-force가 커집니다.",
+    "takeawayKo": "루프 꼭대기는 속도가 가장 느리고 수직항력이 가장 작은 곳입니다.",
+    "difficulty": 2
+  },
+  {
+    "id": "gforce-valley",
+    "titleKo": "G-force의 정점",
+    "concept": "g-force",
+    "promptKo": "급경사 골짜기 트랙에서 G-force가 가장 큰 지점은 어디일까?",
+    "trackPreset": "gforce",
+    "prediction": {
+      "options": ["골짜기 바닥", "첫 번째 내리막", "마지막 평지", "출발점"],
+      "answer": "골짜기 바닥"
+    },
+    "explanationKo": "골짜기 바닥은 속도가 가장 큰 동시에 곡률 반경이 작은 곳입니다. 구심가속도 v²/r가 최대가 되고, 수직항력도 함께 커져 G-force 그래프가 봉우리를 이룹니다. 이 트랙은 최대 G-force가 안전 기준을 넘습니다.",
+    "takeawayKo": "빠른 속도와 작은 곡률 반경이 만나는 곳에서 G-force가 가장 큽니다.",
+    "difficulty": 2
+  },
+  {
+    "id": "loop-slow",
+    "titleKo": "느린 루프",
+    "concept": "safety",
+    "promptKo": "마찰이 있는 이 루프가 위험한 까닭은 무엇일까?",
+    "trackPreset": "loop-slow",
+    "prediction": {
+      "options": [
+        "꼭대기 속도가 부족해 v² < gR이기 때문",
+        "카트가 너무 무겁기 때문",
+        "카트가 너무 가볍기 때문",
+        "마찰이 너무 작기 때문"
+      ],
+      "answer": "꼭대기 속도가 부족해 v² < gR이기 때문"
+    },
+    "explanationKo": "마찰 때문에 꼭대기에 도달했을 때 속도가 7.6 m/s밖에 되지 않습니다. 반지름 8 m 루프에 필요한 최소 속도는 √(gR) ≈ 8.9 m/s이므로 v² < gR입니다. 이때 수직항력은 음수가 되어 트랙이 카트를 당겨야 하며, 실제 트랙에서는 이탈 위험이 생깁니다.",
+    "takeawayKo": "루프 꼭대기에서는 v² ≥ gR을 만족해야 합니다. 출발 높이를 높이거나 마찰을 줄이세요.",
+    "difficulty": 3
+  }
+]
