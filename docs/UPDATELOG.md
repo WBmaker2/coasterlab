@@ -25,6 +25,12 @@
 - 프로덕션 빌드와 첫 방문 후 오프라인 새로고침을 확인했습니다.
 - 에너지 보존, 마찰열, 자유낙하 속도, 루프 꼭대기 G-force 공식을 해석적 기대값과 비교했습니다.
 
+### 배포
+
+- GitHub 리포지토리: https://github.com/WBmaker2/coasterlab
+- GitHub Pages: https://wbmaker2.github.io/coasterlab/
+- `main` 브랜치에 푸시하면 GitHub Actions가 단위 테스트와 빌드를 거쳐 Pages에 자동 배포합니다.
+
 ### 알아두기
 
 - 화면에 표시되는 물리 결과는 공기저항과 바퀴 회전 관성을 넣지 않은 교육용 이상화 모델입니다. 실제 놀이기구의 안전 인증 자료가 아닙니다.
